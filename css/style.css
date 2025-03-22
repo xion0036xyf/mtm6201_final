@@ -1,3 +1,163 @@
-.navbar-nav {
-    gap: 50px; 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e3c09b;
+    font-family: 'figtree', sans-serif;
+
+}
+
+body > .container {
+    max-width: 1200px; 
+    margin: 0 auto;  
+    padding: 0 15px; 
+}
+
+/* ---------navbar-------- */
+.custom-navbar {
+    background-color: #5e75ae;
+    border-radius: 25px; 
+    margin-top: 20px;
+}
+
+.navbar div a {
+    font-family: 'Nunito Sans',sans-serif;
+    font-style: italic;
+    font-size: 1.5rem;
+    color:white;
+}
+
+/* ------Hero part---- */
+
+.hero-content div h1 {
+    font-family: 'Alfa Slab One',sans-serif;
+    font-size: 3.5rem;
+    /* font-style: italic; */
+}
+
+.hero-image :nth-child(2) {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+@media (min-width: 768px) {
+    .hero-image :nth-child(2) {
+        max-width: 80%; 
+    }
+}
+
+@media (min-width: 992px) {
+    .hero-image :nth-child(2) {
+        max-width: 60%; 
+    }
+}
+
+.hero-section {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.hero-image {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-image :nth-child(1) {
+    position: relative;
+    z-index: 1;
+    transform: scale(1.6); 
+    display: block; 
+    margin: 50px auto;
+    max-width: 100%;
+    padding-top: 20px;
+}
+
+.hero-content p {
+    position: relative;
+    margin-top: -6.5rem; 
+    padding: 1rem;
+    border-radius: 10px;
+    z-index: -1;
+    background-color: rgba(217, 217, 217, 0.2);
+    font-family: 'Figtree',sans-serif;
+}
+
+/* --------Mainbutton part-------- */
+
+.custom-button {
+    background-color: #d2a2ab; 
+    color: white; 
+    border: none; 
+    padding: 10px 40px; 
+    border-radius: 25px; 
+    font-weight: bold;
+    transition: 0.3s; 
+}
+
+.custom-button:hover {
+    background-color: #7c424d; 
+    color: #fff;
+}
+
+.custom-button a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+/* .donate img {
+    width: 60%;
+} */
+
+.mainbutton img {
+    border-radius: 25px; 
+    width: 100%; 
+    /* max-width: 300px;  */
+    border: 10px solid #b2bbc9;     
+}
+
+/* ------divider------- */
+
+.divider {
+    border-top: 2px solid #000;
+    margin: 20px auto;
+    width: 85%;    
+}
+
+/* ----------Project Part */
+
+.project {
+    margin: 0 10px; 
+}
+
+
+.custom-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #e4bab2;  
+    border: 1px solid #000;     
+    margin: 15px 0;
+    padding: 20px;
+    width: 100%;
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-body h5 {
+    text-align: center;
+    font-family: 'Cormorant Garamond',sans-serif;
+    font-size: 1rem;
+}
+
+.card-body p {
+    font-family: 'figtree',sans-serif;
+    font-size: 0.8rem;
 }

@@ -30,6 +30,12 @@ body > .container {
     color:white;
 }
 
+.navbar-collapse {
+    max-height: 300px; 
+    overflow-y: auto;  
+}
+
+
 .navbar-toggler {
     border: none; /* 去掉外框线 */
     padding: 10px; /* 增加点击区域 */
@@ -62,27 +68,14 @@ body > .container {
     /* font-style: italic; */
 }
 
-.hero-image :nth-child(2) {
+.hero-image img:nth-child(2) {
     max-width: 100%;
-    height: auto;
-    
-}
-
-@media (min-width: 768px) {
-    .hero-image :nth-child(2) {
-        max-width: 80%; 
-    }
-}
-
-@media (min-width: 992px) {
-    .hero-image :nth-child(2) {
-        max-width: 60%; 
-    }
+    height: auto;    
 }
 
 .hero-section {
     position: relative;
-    padding: 2rem 0;
+    margin-top: 20px;
 }
 
 .hero-image {
@@ -90,7 +83,7 @@ body > .container {
     z-index: 1;
 }
 
-.hero-image :nth-child(1) {
+.hero-image img:nth-child(1) {
     position: relative;
     z-index: 1;
     transform: scale(1.6); 
@@ -108,6 +101,90 @@ body > .container {
     z-index: -1;
     background-color: rgba(217, 217, 217, 0.2);
     font-family: 'Figtree',sans-serif;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+
+    .hero-box {
+        background-color: rgba(217, 217, 217, 0.2); 
+        border-radius: 20px;
+        position: relative;
+        padding: 40px 0;
+    }
+    
+    .hero-image img:nth-child(2) {
+       width: 100%;
+       height: auto;    
+    }
+    
+
+    .hero-content .text-center p {
+        font-size: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: left;
+        margin-top: -3.5rem; 
+        background-color: transparent;
+        font-family: 'Figtree',sans-serif;
+        font-weight: bold;
+    }
+
+    .hero-content {
+        position: relative;
+    }
+
+    .hero-content .text-center h1 {
+        position: absolute; 
+        font-size: 3rem;
+        color: #000;
+        text-align: left;  
+        margin-right: -20px;  
+        z-index: 2;    
+        top: 5%; 
+        left:5%;
+        width: fit-content;
+        padding: 10px 20px;
+    }
+
+    .hero-content h1 .shift-right {
+        display: block;
+        padding-left: 150px;/* 第二行右对齐 */
+    }
+
+    .hero-image {
+        max-width: 90vw; }
+    
+}
+
+@media (min-width: 992px) {
+    .hero-image :nth-child(2) {
+        width:70%; 
+    }
+
+    .hero-content .text-center h1 {
+        position: absolute; 
+        font-size: 5rem;
+        color: #000;
+        text-align: left;  
+        margin-right: -100px;  
+        z-index: 2;    
+        top: 5%; 
+        left: 10%;
+        width: fit-content;
+    }
+
+    .hero-content .text-center p {
+        font-size: 1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        text-align: left;
+        margin-top: -3.5rem; 
+        background-color: transparent;
+        font-family: 'Figtree',sans-serif;
+        font-weight: bold;}
 }
 
 /* --------Mainbutton part-------- */

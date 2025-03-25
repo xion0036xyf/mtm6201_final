@@ -1,3 +1,8 @@
+:root {
+    --bs-primary:#5e75ae;
+    --bs-secondary: #d2a2ab;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,9 +21,33 @@ body > .container {
     padding: 0 15px; 
 }
 
+.skip-links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.skip-links a{
+    position: absolute;
+    top: -50px;
+    background-color:var(--bs-secondary);
+    color:white;
+    padding: 0.5em 1em;
+    font-weight: bold;
+    z-index: 20;
+    border-radius: 20px;      
+}
+
+.skip-links a:focus{
+    top: 3px;
+    transition: top 0.3s ease;
+}
+
+
 /* ---------navbar-------- */
 .custom-navbar {
-    background-color: #5e75ae;
+    background-color: var(--bs-primary);;
     border-radius: 25px; 
     margin-top: 20px;
 }
@@ -37,18 +66,18 @@ body > .container {
 
 
 .navbar-toggler {
-    border: none; /* 去掉外框线 */
-    padding: 10px; /* 增加点击区域 */
-    background: transparent; /* 移除背景 */
-    outline: none; /* 移除点击时的外边框 */
+    border: none; 
+    padding: 10px; 
+    background: transparent; 
+    outline: none; 
 }
 
 .toggler-icon {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 35px; /* 控制整体高度 */
-    width: 45px; /* 控制整体宽度 */
+    height: 35px; 
+    width: 45px; 
 }
 
 .toggler-icon span {
@@ -152,7 +181,7 @@ body > .container {
 
     .hero-home-content h1 .shift-right {
         display: block;
-        padding-left: 150px;/* 第二行右对齐 */
+        padding-left: 150px;
     }
 
     .hero-home-image {
@@ -192,13 +221,13 @@ body > .container {
 /* --------Mainbutton part-------- */
 
 .custom-button {
-    background-color: #d2a2ab; 
-    color: white; 
-    border: none; 
-    padding: 10px 40px; 
-    border-radius: 25px; 
-    font-weight: bold;
-    transition: 0.3s; 
+    background-color: var(--bs-secondary);
+    color:white; 
+    border:none; 
+    padding:10px 40px; 
+    border-radius:25px; 
+    font-weight:bold;
+    transition:0.3s;
 }
 
 .custom-button:hover {
@@ -285,7 +314,7 @@ body > .container {
 /* --------footer------- */
 
 .footer {
-    background-color: #5e75ae;
+    background-color: var(--bs-primary);
     /* padding: 120px 0 20px; */
     position: relative; 
     width: 100%;
@@ -302,7 +331,7 @@ body > .container {
     left: 0;
     width: 100%; 
     height: 50px; 
-    background-color: #d9d9d9; /* 设定灰色 */
+    background-color: #d9d9d9; 
 }
 
 .footer .container-fluid .copyright {
@@ -440,7 +469,8 @@ body > .container {
     margin: 0 auto;
     width: 100%; 
     /* max-width: 300px;  */
-    border: 10px solid #b2bbc9; 
+    border: #959595 10px solid;
+    
 }
 
 .hero-donate-content div p {
@@ -482,12 +512,15 @@ body > .container {
     padding: 0;
     margin: 20px 20px;
     border-radius: 0 0 25px 25px;
+    text-decoration: none;
     
 }
 
 .position-relative .overlay-text p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     transform: translateY(20px);
+    font-weight: bold;
+    
 }
 
 .donate-program-content img {
@@ -502,14 +535,18 @@ body > .container {
 
     .hero-donate-content div h1 {
         position: absolute;
-        bottom: 30%;
+        bottom: 32%;
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
         width:100%;
         font-size: 3.5rem;
-
     }
+
+    .hero-donate-content img {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -525,8 +562,26 @@ body > .container {
         text-align: center;
         width:100%;
         font-size: 4rem;
-
     }
+
+    .position-relative .overlay-text p {
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .hero-donate-content div h1 {
+        position: absolute;
+        bottom: 22%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        width:100%;
+        font-size: 4rem;
+    }
+
 }
 
 
@@ -546,15 +601,29 @@ body > .container {
     margin: 20px 0;
 }
 
-.hero-adoption-content div img {
+
+.hero-adoption-content .adoption-item img {
     border-radius: 25px;
+    transition: transform 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
 }
+
+.hero-adoption-content .adoption-item:active img {
+    transform: scale(0.95);     
+}
+
+.hero-adoption-content .adoption-item:hover img {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); 
+}
+
 
 .hero-adoption-content div p {
     font-family: "slab", sans-serif;
     font-size: 1.5rem;
     padding: 10px;
+    font-style: italic;
 }
+
+
 
 .adoption-document {
     background-color: #e4bab2;
@@ -562,6 +631,10 @@ body > .container {
     width: 95%;
     margin: 0 auto;
     border-radius: 25px;
+}
+
+.adoption-document h3 {
+    font-weight: bold;
 }
 
 .adoption-button {

@@ -9,13 +9,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="css/hover.css" rel="stylesheet" media="all">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
+        <ul class="skip-links">
+            <li><a href="#nav">Skip to main nav</a></li>
+            <li><a href="#main">Skip to main content</a></li>
+        </ul>
         <!-- header part -->
-         <header>
-            <nav class="navbar custom-navbar navbar-expand-sm navbar-light">
+         <header role="banner">
+            <nav role="navigation" class="navbar custom-navbar navbar-expand-sm navbar-light">
                 <div class="container-fluid">
                     <a href="index.html" 
                     class="navbar-brand  d-flex align-items-center">
@@ -77,14 +82,14 @@
             </nav>
          </header>
 
-         <main>
+         <main role="main">
             <!-- section 1 -->
              <section class="hero-donate">
                 <div class="hero-donate-box">
                     <div class="container">
                         <div class="hero-donate-content row align-items-center">
                             <div class="col-12 text-center">
-                                <h1>Every Donate Counts</h1>
+                                <h1 role="heading">Every Donate Counts</h1>
                             </div>
 
                             <div class="col-12">
@@ -92,7 +97,7 @@
                             </div>
 
                             <div class="col-12 text-center">
-                                <button class="btn custom-button mb-4 mt-3"><a href="adoption.html">ADOPTION</a></button>
+                                <button class="btn custom-button hvr-grow mb-4 mt-3"><a href="adoption.html">DONATE</a></button>
                             </div>
 
                             <div class="col-12">
@@ -100,13 +105,12 @@
                                     Your donation can change the life of a stray cat, dog, or bunny in need. Every contribution helps provide food, medical care, and a safe shelter for these animals. With your support, we can give them a second chance at finding a loving home. No matter how big or small, your kindness makes a difference. Join us in bringing hope and love to animals waiting for their forever families!
                                 </p>
                             </div>
-
                         </div>
                     </div>
                 </div>
              </section>
 
-             <div class="divider"></div>
+             <div role="separator" class="divider"></div>
 
              <!-- section 2 -->
             <section class="donate-program">
@@ -115,9 +119,9 @@
                     <div class="donate-program-content row">
                         <div class="col-12 col-md-6 col-lg-6 position-relative">
                             <img src="images/donate_1.jpg" alt="image of one-time donate" class="img-fluid">
-                            <div class="overlay-text">
+                            <a href="#" class="overlay-text">
                                 <p>One-time Donate</p>
-                            </div>
+                            </a>
                         </div>
 
                         <div class="description-text col-12 col-md-6 col-lg-6">
@@ -126,9 +130,9 @@
 
                         <div class="col-12 col-md-6 col-lg-6 position-relative">
                             <img src="images/donate_2.jpg" alt="image of monthly donation" class="img-fluid">
-                            <div class="overlay-text">
+                            <a href="#" class="overlay-text">
                                 <p>Monthly Donation</p>
-                            </div>
+                            </a>
                         </div>
 
                         <div class="description-text col-md-6 col-lg-6">
@@ -142,7 +146,7 @@
          </main>
     </div>
 
-    <footer class="footer text-white pt-4">
+    <footer role="contentinfo" class="footer text-white pt-4">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-4 col-md-2 col-lg-2">

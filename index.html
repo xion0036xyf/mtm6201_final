@@ -94,7 +94,13 @@
                             </div>
                             <div class="col-12 col-md-6 text-center hero-home-image">
                                 <img src="images/hero-small.png" alt=" mobile hero image" class="img-fluid w-75 d-block d-md-none mx-auto">
-                                <img src="images/hero-big.png" alt="Tablet&desktop hero image" class="d-none d-md-block mx-auto">
+                                <picture class="d-none d-md-block mx-auto">
+                                    <!-- MD 屏幕选择的图片 -->
+                                    <source srcset="images/hero_big_md.jpg" media="(min-width: 768px) and (max-width: 991px)">
+                                    <!-- LG 屏幕选择的图片 -->
+                                    <source srcset="images/hero_big_lg.jpg" media="(min-width: 992px)">
+                                    <img src="images/hero-big.png" alt="Tablet & Desktop hero image" class="img-fluid">
+                                </picture>
                             </div>
                             <div class="col-12 text-center">
                                 <p>

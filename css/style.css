@@ -528,3 +528,63 @@ body > .container {
 
     }
 }
+
+
+/* --------Adoption Page--------- */
+
+.adoption-content div h1 {
+    font-family: 'Alfa Slab One',sans-serif;
+    font-size: 3rem;
+    margin: 40px 0;
+}
+
+.adoption-content {
+    margin: 20px 0;
+}
+
+.hero-adoption-content {
+    margin: 20px 0;
+}
+
+.hero-adoption-content div img {
+    border-radius: 25px;
+}
+
+.hero-adoption-content div p {
+    font-family: "slab", sans-serif;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.adoption-document {
+    background-color: #e4bab2;
+    padding: 30px 40px;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+
+.adoption-button {
+    display: block;
+    background-color: #959595;
+    border-radius: 15px;
+    margin: 20px auto;
+    text-align: center;
+    width: 60%;
+    border: #000 2px solid;
+
+}
+
+.adoption-button a {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.adoption-button:hover {
+    background-color: #fff;
+}
+.adoption-button a:hover {
+    color: #000;
+}

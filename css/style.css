@@ -62,28 +62,30 @@ body > .container {
 }
 /* ------Hero part---- */
 
-.hero-content div h1 {
+.hero-home-content div h1 {
     font-family: 'Alfa Slab One',sans-serif;
     font-size: 3.5rem;
     /* font-style: italic; */
 }
 
-.hero-image img:nth-child(2) {
+
+
+.hero-home-image img:nth-child(2) {
     max-width: 100%;
     height: auto;    
 }
 
-.hero-section {
+.hero-home {
     position: relative;
     margin-top: 20px;
 }
 
-.hero-image {
+.hero-home-image {
     position: relative;
     z-index: 1;
 }
 
-.hero-image img:nth-child(1) {
+.hero-home-image img:nth-child(1) {
     position: relative;
     z-index: 1;
     transform: scale(1.6); 
@@ -93,7 +95,7 @@ body > .container {
     padding-top: 20px;
 }
 
-.hero-content p {
+.hero-home-content p {
     position: relative;
     margin-top: -6.5rem; 
     padding: 1rem;
@@ -106,20 +108,20 @@ body > .container {
 
 @media (min-width: 768px) {
 
-    .hero-box {
+    .hero-home-box {
         background-color: rgba(217, 217, 217, 0.2); 
         border-radius: 20px;
         position: relative;
         padding: 40px 0;
     }
     
-    .hero-image img:nth-child(2) {
+    .hero-home-image img:nth-child(2) {
        width: 100%;
        height: auto;    
     }
     
 
-    .hero-content .text-center p {
+    .hero-home-content .text-center p {
         font-size: 1rem;
         left: 50%;
         transform: translateX(-50%);
@@ -131,11 +133,11 @@ body > .container {
         font-weight: bold;
     }
 
-    .hero-content {
+    .hero-home-content {
         position: relative;
     }
 
-    .hero-content .text-center h1 {
+    .hero-home-content .text-center h1 {
         position: absolute; 
         font-size: 3rem;
         color: #000;
@@ -148,22 +150,22 @@ body > .container {
         padding: 10px 20px;
     }
 
-    .hero-content h1 .shift-right {
+    .hero-home-content h1 .shift-right {
         display: block;
         padding-left: 150px;/* 第二行右对齐 */
     }
 
-    .hero-image {
+    .hero-home-image {
         max-width: 90vw; }
     
 }
 
 @media (min-width: 992px) {
-    .hero-image :nth-child(2) {
+    .hero-home-image :nth-child(2) {
         width:70%; 
     }
 
-    .hero-content .text-center h1 {
+    .hero-home-content .text-center h1 {
         position: absolute; 
         font-size: 5rem;
         color: #000;
@@ -175,7 +177,7 @@ body > .container {
         width: fit-content;
     }
 
-    .hero-content .text-center p {
+    .hero-home-content .text-center p {
         font-size: 1.5rem;
         left: 50%;
         transform: translateX(-50%);
@@ -413,5 +415,116 @@ body > .container {
         padding: 20px 0;
         gap: 20px;
         width: 75%;
+    }
+}
+
+
+/* ----------Donate Page-------- */
+
+    /* --------hero section----- */
+
+.hero-donate-content div h1 {
+    font-family: 'Alfa Slab One',sans-serif;
+    font-size: 3rem;
+    /* font-style: italic; */
+}
+
+.hero-donate{
+    margin-top: 20px;
+}
+
+.hero-donate-content img {
+    display: block;
+    border-radius: 25px; 
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%; 
+    /* max-width: 300px;  */
+    border: 10px solid #b2bbc9; 
+}
+
+.hero-donate-content div p {
+    font-family: 'figtree',sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.1;
+}
+
+.donate-program h2 {
+    margin: 20px auto;
+    text-align: center;
+    font-family: 'Nunito Sans',sans-serif;
+    font-style: italic;
+    font-size: 2.5rem;
+    font-weight:700;
+}
+
+
+.donate-program-content .description-text p {
+    margin: 20px;
+    margin-top: 50px;
+    font-family: 'figtree',sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.1;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 0;
+    width: 95%;
+    height: 20%;
+    background: rgba(0, 0, 0, 0.2); 
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 20px 20px;
+    border-radius: 0 0 25px 25px;
+    
+}
+
+.position-relative .overlay-text p {
+    font-size: 1.2rem;
+    transform: translateY(20px);
+}
+
+.donate-program-content img {
+    margin: 20px;
+    border-radius: 25px;
+}
+
+@media (min-width: 768px) {
+    .hero-donate-content {
+        position: relative;
+    }
+
+    .hero-donate-content div h1 {
+        position: absolute;
+        bottom: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        width:100%;
+        font-size: 3.5rem;
+
+    }
+}
+
+@media (min-width: 992px) {
+    .hero-donate-content {
+        position: relative;
+    }
+
+    .hero-donate-content div h1 {
+        position: absolute;
+        bottom: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        width:100%;
+        font-size: 4rem;
+
     }
 }

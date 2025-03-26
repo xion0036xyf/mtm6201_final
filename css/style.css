@@ -228,18 +228,15 @@ body > .container {
     border-radius:25px; 
     font-weight:bold;
     transition:0.3s;
+    text-decoration: none; 
+    color: white; 
+    font-family: 'Nunito Sans',sans-serif;
+    font-style: italic;
 }
 
 .custom-button:hover {
     background-color: #7c424d; 
     color: #fff;
-}
-
-.custom-button a {
-    text-decoration: none; 
-    color: inherit; 
-    font-family: 'Nunito Sans',sans-serif;
-    font-style: italic;
 }
 
 /* .donate img {

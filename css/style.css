@@ -349,8 +349,16 @@ body > .container {
     margin-top: 60px;
     padding: 20px 0;
     gap: 20px;
-    width: 85%;
-    
+    width: 85%;    
+}
+
+.footer .container-fluid {
+    margin: 30px auto;
+    margin-bottom: 30px;
+    margin-top: 60px;
+    padding: 20px 0;
+    gap: 20px;
+    width: 85%;    
 }
 
 .footer .row {
@@ -480,6 +488,7 @@ body > .container {
     font-size: 1.2rem;
     line-height: 1.1;
 }
+
 
 .donate-program h2 {
     margin: 20px auto;

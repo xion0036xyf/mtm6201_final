@@ -344,11 +344,13 @@ body > .container {
 }
 
 .footer .container-fluid {
+    margin: 30px auto;
     margin-bottom: 30px;
     margin-top: 60px;
     padding: 20px 0;
     gap: 20px;
     width: 85%;
+    
 }
 
 .footer .row {
